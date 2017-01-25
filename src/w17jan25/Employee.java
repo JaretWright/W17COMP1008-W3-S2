@@ -39,6 +39,27 @@ public class Employee {
         
         int age = Period.between(dob, today).getYears();
         
-        
+        if (age >= 15 && age <= 90) //valid Employee dob
+            this.dateOfBirth = dob;
+        else
+            throw new IllegalArgumentException("The employee must be 15-90 years old.");
     }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public int getSocialInsuranceNum() {
+        return socialInsuranceNum;
+    }
+
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+    
+    
 }

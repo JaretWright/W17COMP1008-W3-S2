@@ -5,6 +5,9 @@
  */
 package w17jan25;
 
+import java.time.LocalDate;
+import java.time.Month;
+
 /**
  *
  * @author jwright
@@ -15,7 +18,11 @@ public class W17Jan25 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       Employee employee1 = new Employee("Fred","Flintstone",1234,
+                                          LocalDate.of(1998, Month.MARCH, 14));
+       
+       System.out.printf("Employee1 is %s%n", employee1);
+       
     }
     
 }
