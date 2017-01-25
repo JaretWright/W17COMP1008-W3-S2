@@ -50,7 +50,7 @@ public class PayCheque {
      */
     public String toString()
     {
-        return String.format("Cheque #%d, issued to %s, for the amount of %.2f",getChequeNumber(),
+        return String.format("Cheque #%d, issued to %s, for the amount of $%.2f",getChequeNumber(),
                                            getEmployeeName(), getAmount() );
     }
     
